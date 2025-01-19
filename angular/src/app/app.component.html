@@ -1,3 +1,33 @@
 <router-outlet>
   <app-spinner></app-spinner>
 </router-outlet>
+
+
+<div *ngIf="modalVersion" class="home-screen">
+  <button (click)="closeVersion()" tabIndex='-1' type="button">
+    X
+  </button>
+  <p>Доступна новая версия этого приложения. <a (click)="updateVersion()" href="">Обновить</a></p>
+</div>
+
+<div *ngIf="modalPwaPlatform === 'ANDROID' || modalPwaPlatform === 'IOS'" class="home-screen">
+  <!-- Android -->
+  <p (click)="addToHomeScreen()" *ngIf="modalPwaPlatform === 'ANDROID'">
+    Чтобы установить это мобильное приложение на свое устройство нажмите
+    Download
+  </p>
+  <!-- iOS with Safari -->
+  <div *ngIf="modalPwaPlatform === 'IOS'" class="home-screen__ios">
+    Чтобы установить это мобильное приложение на свое устройство, нажмите кнопку «Меню».
+    <img
+      alt=""
+      class="ios-menu m-0"
+      src="https://res.cloudinary.com/rodrigokamada/image/upload/v1641089482/Blog/angular-pwa/safari_action_button_38x50.png"/>
+    и нажмите кнопку «Добавить на главный экран»
+    +
+  </div>
+  <button (click)="closePwa()" tabIndex='-1' type="button">
+    X
+  </button>
+</div>
+
