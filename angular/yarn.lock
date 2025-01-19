@@ -101,6 +101,18 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
+"@angular-devkit/core@19.1.2":
+  version "19.1.2"
+  resolved "https://registry.npmjs.org/@angular-devkit/core/-/core-19.1.2.tgz"
+  integrity sha512-sCYu96C7ToeLGi+ggs2+TxOt1/5eC6WZe/SR7cLpf9rv+gi3ijbH2w+JP6aR4Ne12EL6WGkes42rfT5fL+Z4Gg==
+  dependencies:
+    ajv "8.17.1"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.3.1"
+    picomatch "4.0.2"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
 "@angular-devkit/schematics@>= 19.0.0 < 20.0.0", "@angular-devkit/schematics@19.0.6":
   version "19.0.6"
   resolved "https://registry.npmjs.org/@angular-devkit/schematics/-/schematics-19.0.6.tgz"
@@ -109,6 +121,17 @@
     "@angular-devkit/core" "19.0.6"
     jsonc-parser "3.3.1"
     magic-string "0.30.12"
+    ora "5.4.1"
+    rxjs "7.8.1"
+
+"@angular-devkit/schematics@19.1.2":
+  version "19.1.2"
+  resolved "https://registry.npmjs.org/@angular-devkit/schematics/-/schematics-19.1.2.tgz"
+  integrity sha512-+eeDvbTj37Yczs3S1Hy42Nr1OG5BHORDPdY+bLIP383aTFjfTtlMIya46iNvMCYjinvnQkC4GcKdsa4ews3c9A==
+  dependencies:
+    "@angular-devkit/core" "19.1.2"
+    jsonc-parser "3.3.1"
+    magic-string "0.30.17"
     ora "5.4.1"
     rxjs "7.8.1"
 
@@ -220,7 +243,7 @@
   optionalDependencies:
     parse5 "^7.1.2"
 
-"@angular/cli@19.0.6":
+"@angular/cli@^19.0.0", "@angular/cli@19.0.6":
   version "19.0.6"
   resolved "https://registry.npmjs.org/@angular/cli/-/cli-19.0.6.tgz"
   integrity sha512-ZEHhgRRVIdn10dbsAjB8TE9Co32hfuL9/im5Jcfa1yrn6KJefmigz6KN8Xu7FXMH5FkdqfQ11QpLBxJSPb9aww==
@@ -309,10 +332,26 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/pwa@19.1.2":
+  version "19.1.2"
+  resolved "https://registry.npmjs.org/@angular/pwa/-/pwa-19.1.2.tgz"
+  integrity sha512-v3Qs0qNeea2ztZkzfaIypxtpbOjbr1ne+PXycLE3PzJm6ViIMWhaXPQ72xVQThAvOPivBHEwoqbfrRv3ixw+wg==
+  dependencies:
+    "@angular-devkit/schematics" "19.1.2"
+    "@schematics/angular" "19.1.2"
+    parse5-html-rewriting-stream "7.0.0"
+
 "@angular/router@19.0.5":
   version "19.0.5"
   resolved "https://registry.npmjs.org/@angular/router/-/router-19.0.5.tgz"
   integrity sha512-6tNubVVj/rRyTg+OXjQxACfufvCLHAwDQtv9wqt6q/3OYSnysHTik3ho3FaFPwu7fXJ+6p9Rjzkh2VY9QMk4bw==
+  dependencies:
+    tslib "^2.3.0"
+
+"@angular/service-worker@^19.0.0", "@angular/service-worker@19.0.5":
+  version "19.0.5"
+  resolved "https://registry.npmjs.org/@angular/service-worker/-/service-worker-19.0.5.tgz"
+  integrity sha512-qU5lgx1WJ+feCOV/EhkN9m20xFdIslpEQcSZZC+VJnEwcG6VTbofg1dRaHWZ9HAjS1uP7bFoK0HUYu4el0bHGA==
   dependencies:
     tslib "^2.3.0"
 
@@ -1680,6 +1719,15 @@
   dependencies:
     "@angular-devkit/core" "19.0.6"
     "@angular-devkit/schematics" "19.0.6"
+    jsonc-parser "3.3.1"
+
+"@schematics/angular@19.1.2":
+  version "19.1.2"
+  resolved "https://registry.npmjs.org/@schematics/angular/-/angular-19.1.2.tgz"
+  integrity sha512-p+FG5EjpBFko8G1F/fBShlWnW0VvNz7APWTAUnwOreCnvKQltF4XFYbnLWrFh9twpvdUzEQH3BYz5VvK7aIx0Q==
+  dependencies:
+    "@angular-devkit/core" "19.1.2"
+    "@angular-devkit/schematics" "19.1.2"
     jsonc-parser "3.3.1"
 
 "@sigstore/bundle@^3.0.0":
@@ -3753,6 +3801,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
+fsevents@~2.3.2, fsevents@~2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
+
 function-bind@^1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz"
@@ -4748,6 +4801,13 @@ magic-string@0.30.12:
   version "0.30.12"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.30.12.tgz"
   integrity sha512-Ea8I3sQMVXr8JhN4z+H/d8zwo+tYDgHE9+5G4Wnrwhs0gaK9fXTKx0Tw5Xwsd/bCPTTZNRAdpyzvoeORe9LYpw==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.5.0"
+
+magic-string@0.30.17:
+  version "0.30.17"
+  resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.30.17.tgz"
+  integrity sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.0"
 
